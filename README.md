@@ -1,26 +1,33 @@
-# 2️⃣ Desafio Jogo da Memória
+# Desafio - Jogo da Memória 🎮  
+- Desenvolvimento Front-End  
+- Um jogo da memória divertido com emojis temáticos de Halloween, onde o objetivo é encontrar todos os pares.
 
-**O Que deve ser utilizado**
+<br/>
 
-- Variáveis
-- Operadores
-- Laços de repetição
-- Estruturas de decisões
+## Descrição  
+O projeto foi desenvolvido como um desafio para praticar lógica de programação e manipulação de DOM com JavaScript. Durante o desenvolvimento, foram adicionadas funcionalidades extras para tornar o jogo mais interativo e divertido.
 
-## Objetivo
+<br/>
 
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+## Funcionalidades:
+- **Jogo da memória**: O objetivo principal é encontrar todos os pares de cartas iguais.  
+- **Feedback visual**: As cartas abertas mostram o emoji correspondente, e as cartas combinadas ficam viradas.
+- **Reconhecimento de vitória**: Uma mensagem é exibida ao jogador ao finalizar o jogo.  
 
-Se XP for menor do que 1.000 = Ferro
-Se XP for entre 1.001 e 2.000 = Bronze
-Se XP for entre 2.001 e 5.000 = Prata
-Se XP for entre 5.001 e 7.000 = Ouro
-Se XP for entre 7.001 e 8.000 = Platina
-Se XP for entre 8.001 e 9.000 = Ascendente
-Se XP for entre 9.001 e 10.000= Imortal
-Se XP for maior ou igual a 10.001 = Radiante
+<br/>
 
-## Saída
+## Funcionalidades extras:
+- **Feedback sonoro**: Sons para acertos e vitória, melhorando a imersão do jogador.  
+- **Embaralhamento das cartas**: Cada partida começa com uma ordem aleatória de cartas, garantindo re-jogabilidade.  
 
-Ao final deve se exibir uma mensagem:
-"O Herói de nome **{nome}** está no nível de **{nivel}**"
+<br/>
+
+# Tecnologias utilizadas:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+
+<br/>
+
+# © Carol Gonzaga 🏳️‍🌈  
+💻 Confira o projeto final: [Jogo da Memória](https://carolgonzaga.github.io/desafio-jogo-da-memoria/)
