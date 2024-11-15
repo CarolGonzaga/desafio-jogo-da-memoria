@@ -73,35 +73,35 @@ function handleClick() {
     }
 }
 
-// Função que verifica se as duas cartas abertas formam um par.
+// Função para verificar se as duas cartas abertas formam um par.
 function checkMatch() {
-  
-    // Compara o conteúdo das duas cartas abertas (emojis).
-    if (openCards[0].innerHTML === openCards[1].innerHTML) {
     
-        // Se forem iguais, toca um som de sucesso.
-        playSound("success");
-
-        // Adiciona a classe CSS "boxMatch" para marcar as cartas como combinadas.
+    // Compara os emojis das duas cartas abertas.
+    if (openCards[0].innerHTML === openCards[1].innerHTML) {
+        
+        // Se forem iguais, adiciona a classe CSS "boxMatch" para marcar as cartas como combinadas.
         openCards[0].classList.add("boxMatch");
         openCards[1].classList.add("boxMatch");
+        
+        // Verifica se todas as cartas no jogo foram combinadas.
+        if (document.querySelectorAll(".boxMatch").length === emojis.length) {
+            
+            // Se todas as cartas foram combinadas, toca o som de vitória e exibe a mensagem.
+            playSound("win");
+            alert("Você Venceu!");
+        
+        } else {
+            // Se ainda houver cartas a combinar, toca o som de acerto.
+            playSound("success");
+        }
     
     } else {
-        // Se forem diferentes, remove a classe "boxOpen" para fechar as cartas.
+        
+        // Se forem diferentes, remove a classe "boxOpen" para fechá-las novamente.
         openCards[0].classList.remove("boxOpen");
         openCards[1].classList.remove("boxOpen");
     }
 
-    // Reseta o array `openCards` para permitir abrir novas cartas.
+    // Reseta o array `openCards` para que o jogador possa abrir novas cartas.
     openCards = [];
-
-    // Verifica se todas as cartas foram combinadas.
-    if (document.querySelectorAll(".boxMatch").length === emojis.length) {
-
-        // Toca o som de vitória.
-        playSound("win");
-
-        // Exibe uma mensagem de vitória ao jogador.
-        alert("Você Venceu!");
-    }
 }
